@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aravinth Dhiwagar | Full Stack Developer</title>
+  <style>
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      scroll-behavior: smooth;
+      position: relative;
+      z-index: 1;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #80cbc4;
+      height: 30px;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      color: #80cbc4;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 800px;
+      margin: auto;
+      z-index: 2;
+      position: relative;
+    }
+
+    h2 {
+      border-bottom: 2px solid #80cbc4;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .project {
+      background: #1e1e1e;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1f1f1f;
+      margin-top: 3rem;
+      color: #aaa;
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.75rem;
+      border: none;
+      border-radius: 6px;
+    }
+
+    form button {
+      background: #80cbc4;
+      color: #121212;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav a { display: block; margin: 0.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <h1>Aravinth Dhiwagar</h1>
+    <p id="typed-text"></p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="aravinthdhiwagar.pdf" download>Resume</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a recent graduate eager to start my career as a Full Stack Developer. I have a strong foundation in HTML, CSS, JavaScript, and Python, with experience using Git, GitHub, and IntelliJ. I am passionate about learning and solving problems, and ready to contribute to building efficient and user-friendly web applications.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Online DJ Booking Website</h3>
+      <p>Developed using PHP, HTML, and CSS.</p>
+    </div>
+    <div class="project">
+      <h3>Student Result Management System</h3>
+      <p>Developed using PHP, HTML, and CSS.</p>
+    </div>
+    <div class="project">
+      <h3>Movie Subscription System</h3>
+      <p>Developed using PHP, HTML, and CSS.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript, PHP, SQL, Python</li>
+      <li>Git, GitHub, GitBash, IntelliJ</li>
+      <li>Teamwork, Leadership, Time Management, Critical Thinking</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formsubmit.co/aravinthdhiwagar@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aravinth Dhiwagar</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    // Typed.js
+    new Typed('#typed-text', {
+      strings: ['Full Stack Developer', 'Tech Enthusiast', 'Problem Solver'],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+
+    // Particles.js
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 60 },
+        color: { value: '#80cbc4' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: 'repulse' }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
